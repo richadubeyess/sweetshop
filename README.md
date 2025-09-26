@@ -24,30 +24,45 @@ Maven
 Frontend
 React + Vite
 React Router
+TailwindCSS
+
 
 
 #Register page
 
 <img width="1920" height="1080" alt="Register" src="https://github.com/user-attachments/assets/fb4f1537-1a51-46fe-a75f-e799e48aab12" />
 
+
 #Loginpage
+
 <img width="1920" height="1080" alt="Login" src="https://github.com/user-attachments/assets/75f452ee-866f-4493-8416-d5ca2df93523" />
 
+
 #userview
+
 <img width="1920" height="1080" alt="Userview" src="https://github.com/user-attachments/assets/bb26aadc-2225-459e-baa0-73e1bbd1d2c1" />
 
+
 #sweetadded by admin
+
 <img width="1920" height="1080" alt="sweetadded" src="https://github.com/user-attachments/assets/a631f373-124a-4335-b327-78d73063b043" />
+
 
 <img width="1920" height="1080" alt="sweetadded" src="https://github.com/user-attachments/assets/6b4bea85-c716-4255-88ba-14b457ca0256" />
 
+
 #searching sweet by name
+
 <img width="1920" height="1080" alt="searchbyname" src="https://github.com/user-attachments/assets/a14b765c-29c1-41a4-b3e6-145d51103596" />
 
+
 #serching sweet by price range
+
 <img width="1920" height="1080" alt="searchbypricerange" src="https://github.com/user-attachments/assets/fc23b510-52a0-4bf1-8384-9d72b37f5cc2" />
 
+
 #search by category
+
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ba7b3c6b-1cf1-4fa1-b8cd-1a20cf0e7ac3" />
 
 
@@ -70,5 +85,4 @@ React Router
 
 
 
-TailwindCSS
-<img width="1920" height="1080" alt="Register" src="https://github.com/user-attachments/assets/f48e3ab4-69fc-4a79-b5aa-160793003db4" />
+
