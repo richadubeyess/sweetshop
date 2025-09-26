@@ -77,6 +77,23 @@ export default function AdminPage() {
     }
   };
 
+  
+  const handlePurchase = async (id) => {
+    const qty = prompt("Enter quantity to purchase:");
+    if (!qty || isNaN(qty)) return;
+    const res = await fetch(`http://localhost:5054/api/sweets/${id}/purchase?qty=${qty}`, {
+      method: "POST",
+      headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
+    });
+    if (res.ok) {
+      alert(" Sweet purchased!");
+      fetchSweets();
+    } else {
+      const err = await res.json();
+      alert("❌ " + (err.message || "Failed to purchase sweet"));
+    }
+  };
+
   const logout = () => {
     localStorage.removeItem("token");
     navigate("/login");
@@ -163,6 +180,12 @@ export default function AdminPage() {
                   {s.name} ({s.category}) - ₹{s.price} | Stock: {s.quantity}
                 </span>
                 <div className="flex gap-2">
+                  <button
+                    onClick={() => handlePurchase(s.id)}
+                    className="bg-green-500 text-white px-3 py-1 rounded-lg hover:bg-green-600 shadow"
+                  >
+                    🛒 Purchase
+                  </button>
                   <button
                     onClick={() => handleRestock(s.id)}
                     className="bg-yellow-500 text-white px-3 py-1 rounded-lg hover:bg-yellow-600 shadow"
